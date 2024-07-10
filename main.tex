@@ -1,0 +1,41 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% Dark theme colors
+\definecolor{bgcolor}{HTML}{1E1E1E}
+\definecolor{textcolor}{HTML}{D4D4D4}
+\definecolor{titlecolor}{HTML}{569CD6}
+\definecolor{linkcolor}{HTML}{569CD6}
+\definecolor{urlcolor}{HTML}{9CDCFE}
+\definecolor{citecolor}{HTML}{C586C0}
+
+% Beamer color theme settings
+\setbeamercolor{background canvas}{bg=bgcolor}
+\setbeamercolor{normal text}{fg=textcolor}
+\setbeamercolor{frametitle}{fg=titlecolor}
+\setbeamercolor{title}{fg=titlecolor}
+\setbeamercolor{section in toc}{fg=titlecolor}
+\setbeamercolor{subsection in toc}{fg=titlecolor}
+
+% Hyperref settings for dark theme
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkcolor,
+  urlcolor=urlcolor,
+  citecolor=citecolor
+}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+
+\title{Ajtai commitment expansion}
+\author{Matthew Klein}
+\date{\today}
+% Slides
+\include{front}
+\include{slide_1}
+\include{slide_2}
+
+\end{document}
