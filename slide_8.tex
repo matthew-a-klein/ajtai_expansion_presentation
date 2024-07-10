@@ -1,0 +1,16 @@
+\section{RBEval}
+\begin{frame}{$\mathcal{R}^B_{eval}$}
+    \begin{itemize}
+        \item Essentially the same as before, with an added evaluation statement
+        \item We supply the relation with variables and an evaluation of the $\overrightarrow{f}$ at those variable
+    \end{itemize}
+    \[
+        \mathcal{R}^B_{\text{eval}} =
+        \left\{ (pp; \, (r,v,cm) \in \mathcal{R}^{\log m}_q \times \mathcal{R}_q \times \mathcal{R}^{\kappa}_q; \, \overrightarrow{f} \in \mathcal{R}^m_q) \mid
+        \begin{array}{c}
+            (pp; \, cm; \, \overrightarrow{f}) \in \mathcal{R}^B_{cm} \\
+            \land \, \text{mle}\,[\hat{f}\,](\overrightarrow{r}) = v
+        \end{array}
+        \right\}
+    \]
+\end{frame}
