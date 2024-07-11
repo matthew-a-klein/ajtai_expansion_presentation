@@ -1,0 +1,26 @@
+\section{CCS}
+\begin{frame}
+    {Let's take this to CCS}
+    \begin{itemize}
+        \item We introduce an insane amount of notation
+        \item \begin{itemize}
+
+                  \item Public Paramers (\textbf{pp}) :=$(n_{r}, \, n_{c}, \,t,\,n_{s}, \, \text{deg}, l_{in})$
+                  \item $\overline{\mathcal{R}}$ is an arbitrary ring
+                  \item $\mathbb{i}$ consists of \begin{enumerate}
+                            \item $t$ matrices $M_1..M_t \in \overline{\mathcal{R}}^{n_{r} \times n_{c}}$ with $\mathcal{O}(n_{r} + n_{c})$ non-zero entries
+                            \item $n_{s}$ multisets $S_1..S_{n_s} \subseteq [t]$ with $|S_i| < \text{deg}$ for all $i \in [n_s]$
+                            \item $n_s$ scalars $c{n_1}, ..., c{n_s} \in \overline{\mathcal{R}}$
+                        \end{enumerate}
+              \end{itemize}
+        \item We then introduce the relation $\mathcal{R}_{\text{ccs}}$
+        \item \begin{enumerate}
+                  \item $\textbf{pp}_{\text{ccs}}:= (\textbf{pp},\, \mathbb{i})$
+                  \item $(\textbf{pp}_{\text{ccs}}, \mathbb{x} \in \overline{\mathcal{R}}^{l_\text{in}},\,\mathbb{w} \in \overline{\mathcal{R}}^{n_c- l_\text{in} -1})$
+                  \item $\overline{\textbf{z}} := (\mathbb{x}, 1,\mathbb{w}) \in \mathcal{R}^{n_c}$
+                  \item $ \sum_{i=1}^{n_s} c_i \cdot \bigcirc_{j \in S_i} (M_j \cdot \vec{z}) = 0^{n_r}$
+              \end{enumerate}
+    \end{itemize}
+
+
+\end{frame}
