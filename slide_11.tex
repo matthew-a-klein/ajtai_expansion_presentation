@@ -1,0 +1,18 @@
+\section{RBcmccs}
+\begin{frame}
+    {Let's bind $\mathcal{R_{\text{cm}}}$ and $\mathcal{R}_{\text{cm}}$ together!}
+    \begin{itemize}
+        \item We introduce the gadget matrix
+        \item $l := \frac{m}{n_c} $
+        \item $\textbf{G} := \text{I}_{n_{c}}\otimes [1, B, ... B^{l -1}] \in \mathbb{Z}^{n_{c} \times m}_q$
+        \item We then define $\mathcal{R}^{B}_{\text{cmcss}}$
+    \end{itemize}
+    We then define \begin{equation*}
+        \mathcal{R}^{B}_{\text{cmcss}} := \left\{ \begin{array}{l}
+            (\text{pp}, \mathbb{x} := (cm  \in \mathcal{R}^{\kappa}_q , \mathbb{x}_{\text{ccs}} \in \mathcal{R}^{l_{\text{in}}}_q));
+            \mathbb{w} := (\overrightarrow{\textbf{f}} \in \mathcal{R}^m_q, \mathbb{w}_{\text{ccs}} \in \mathcal{R}^{n- l_{\text{in}} -1}) \ \text{s.t.} \\
+            (\text{pp}, \text{cm}, \overrightarrow{\textbf{f}} \in \mathcal{R}^B_{\text{cm}}) \land (\text{pp}_\text{ccs},\,\mathbb{x}_\text{ccs};\;\mathbb{w}_\text{ccs}) \in \mathcal{R}_{\text{ccs}}\land (\textbf{z}_{\text{ccs}} = \textbf{G}\overrightarrow{\textbf{f}})
+        \end{array} \right\}
+    \end{equation*}
+    $\overline{\textbf{z}}_{\text{ccs}}:= (\mathbb{x}_{\text{ccs}}, 1,\mathbb{w}_{\text{ccs}}) \in \mathcal{R}^{n_c}$
+\end{frame}
