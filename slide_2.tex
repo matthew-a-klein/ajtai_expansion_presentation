@@ -1,15 +1,10 @@
-\section{Ajtai Commitments as a relation}
-\begin{frame}{Ajtai commitments as a relation}
+\section{Ajtai Commitments}
+\begin{frame}{Ajtai Commitments}
     \begin{itemize}
-        \item We define relation $\mathcal{R}^B_{MSIS^{\infty}}$ between an ajtati commitment and the $\overrightarrow{x}$
-        \item $\mathcal{R}^B_{MSIS^{\infty}} := {(pp, \, cm \in \mathcal{R}^{\kappa}_q\, ;\, \overrightarrow{x} \in \mathcal{R}^m : (cm\, =\, \bf{A}\cdot \overrightarrow{x} \; mod \; q) \land ||\overrightarrow{x}||_{\infty} < B  )}$
-        \item $pp\,:=\, (\kappa, m, B, \bf{A})$ are the public parameters of the relation
-        \item Public parameters define the 'meta' information of the relation:
-              \begin{enumerate}
-                  \item The size of the vectors and matrices
-                  \item The norm limit of $\overrightarrow{x}$
-                  \item The random matrix $\bf{A}$
-
-              \end{enumerate}
+        \item Ajtai commitments allow us to commit to a vector of polynomials
+        \item We commit to an a vector $\overrightarrow{x}  \in \mathcal{R}^{m}$ by multiplying it with a random matrix $\bf{A} \in \mathcal{R}^{\kappa \times m}_\mathit{q}$
+        \item $||\overrightarrow{x}||_{\infty} < B$ where $B$ is the norm bound
+        \item Output of commitment is  $cm := \bf{A} \cdot \overrightarrow{x} mod \; q \in \mathcal{R}^{\kappa}_{\mathit{q}}$
+        \item This commitment is considered binding because of the assumed hardness of MSIS
     \end{itemize}
 \end{frame}

@@ -1,13 +1,15 @@
-\section{X in rq}
-\begin{frame}{$\overrightarrow{x} \in \mathcal{R}^\mathit{m}_\mathit{q}$}
+\section{Ajtai Commitments as a relation}
+\begin{frame}{Ajtai commitments as a relation}
     \begin{itemize}
-        \item  \begin{itemize}
-                  \item $||\overrightarrow{x}||_{\infty} < B$ and $B < \frac{q}{2}$
-                  \item $\overrightarrow{x} \in \mathcal{R}^m$ can be uniquely represented in $\mathcal{R}^m_q$
-                  \item We define $||\overrightarrow{x}||_{|infty} < B$ as the norm after lifting $\overrightarrow{x} \in \mathcal{R}^m_q to \mathcal{R}$
-              \end{itemize}
-        \item We can rewrite our commitment as $\mathcal{R}^B_{MSIS^{\infty}} := {(pp, \, cm \in \mathcal{R}^{\kappa}_q\, ;\, \overrightarrow{x} \in \mathcal{R}^m_q : (cm\, =\, \bf{A}\cdot \overrightarrow{x} ) \land ||\overrightarrow{x}||_{\infty} < B  )}$
+        \item We define relation $\mathcal{R}^B_{MSIS^{\infty}}$ between an ajtati commitment and the $\overrightarrow{x}$
+        \item $\mathcal{R}^B_{MSIS^{\infty}} := {(pp, \, cm \in \mathcal{R}^{\kappa}_q\, ;\, \overrightarrow{x} \in \mathcal{R}^m : (cm\, =\, \bf{A}\cdot \overrightarrow{x} \; mod \; q) \land ||\overrightarrow{x}||_{\infty} < B  )}$
+        \item $pp\,:=\, (\kappa, m, B, \bf{A})$ are the public parameters of the relation
+        \item Public parameters define the 'meta' information of the relation:
+              \begin{enumerate}
+                  \item The size of the vectors and matrices
+                  \item The norm limit of $\overrightarrow{x}$
+                  \item The random matrix $\bf{A}$
+
+              \end{enumerate}
     \end{itemize}
-
-
 \end{frame}

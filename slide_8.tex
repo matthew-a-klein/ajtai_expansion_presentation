@@ -1,15 +1,18 @@
-\section{RBEval}
-\begin{frame}{$\mathcal{R}^B_{eval}$}
+\section{RBCM}
+\begin{frame}{$\mathcal{R}^{B}_{cm}$ }
     \begin{itemize}
-        \item Essentially the same as before, with an added evaluation statement
-        \item We supply the relation with variables and an evaluation of the $\overrightarrow{f}$ at those variable
+        \item We can look at $\overrightarrow{x}$ in two ways
+        \item $\overrightarrow{x}$ is a NTT representation of a $\hat{f} \in \mathcal{R}^m_q$
+        \item  $\overrightarrow{x}$ is coefficient embedding of a $\overrightarrow{f} \in \mathcal{R}^m_q$
+        \item The Hadamard product of two NTT representation is equivalent to the multiplication of the two elements
+        \item i.e $\overrightarrow{x} \circ \overrightarrow{x} \cong \hat{f} \circ \hat{f}$
     \end{itemize}
     \[
-        \mathcal{R}^B_{\text{eval}} =
-        \left\{ (pp; \, (r,v,cm) \in \mathcal{R}^{\log m}_q \times \mathcal{R}_q \times \mathcal{R}^{\kappa}_q; \, \overrightarrow{f} \in \mathcal{R}^m_q) \mid
+        \mathcal{R}^B_{\text{cm }} :=
+        \left\{ (pp, \, \overline{\text{cm}} \in \mathcal{R}^{\kappa}_q\, ;\, \overrightarrow{f}  \in \mathcal{R}^{m}_q \mid
         \begin{array}{c}
-            (pp; \, cm; \, \overrightarrow{f}) \in \mathcal{R}^B_{cm} \\
-            \land \, \text{mle}\,[\hat{f}\,](\overrightarrow{r}) = v
+            \overline{\text{cm}} = \overline{\mathbf{A}} \cdot \overrightarrow{f} \\
+            \land \, \| \hat{f} \| \circ \left[\bigcirc^{B-1}_{i=1} (\hat{f} - \hat{i}) \circ (\hat{f} + \hat{i}) \right] = \hat{0}
         \end{array}
         \right\}
     \]

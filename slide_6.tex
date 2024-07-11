@@ -1,16 +1,11 @@
-\section{Representing the inf norm inequality as a hadamard product}
-\begin{frame}{Representing $||\overrightarrow{x}||_{\infty} < B$ as an hadamard product}
-    \[
-        \mathcal{R}^B_{\text{MSISProd}} :=
-        \left\{ (pp, \, \overline{\text{cm}} \in \mathbb{Z}^{\kappa d}\, ;\, \overrightarrow{x}  \in \mathbb{Z}^{md} \mid
-        \begin{array}{c}
-            \overline{\text{cm}} = \overline{\mathbf{A}} \cdot \overrightarrow{x} \\
-            \land \, \| \overrightarrow{x} \| \circ \left[\bigcirc^{B-1}_{i=1} (\overrightarrow{x} - \overrightarrow{i}) \circ (\overrightarrow{x} + \overrightarrow{i}) \right]= \overrightarrow{0}
-        \end{array}
-        \right\}
-    \]
+\section{X in Z^{kd}}
+\begin{frame}{$\overrightarrow{x} \in \mathbb{Z}^{\kappa d}$}
 
     \begin{itemize}
-        \item To see this see that the biggest coefficient in any of the x matrices is less than B
+        \item We can uniquely represent $\overrightarrow{x} \in \mathcal{R}^m_q$ as $\overrightarrow{x} \in \mathbb{Z}^{\kappa d}$ by taking $fvec(\overrightarrow{x})$
+        \item $\overline{\mathbf{A}} = rot(\mathbf{A})$
+        \item $\overline{cm}$ is the coefficient embedding of $cm$
+        \item $\overline{cm} = \overline{\mathbf{A}} \cdot fvec(\overrightarrow{x})$
     \end{itemize}
+    $\mathcal{R}^B_{MSIS^{\infty}} := {(pp, \, \overline{cm} \in \mathbb{Z}^{\kappa d}\, ;\, \overrightarrow{x}  \in \mathbb{Z}^{m d} : (\overline{cm}\, =\,\overline{ \bf{A}}\cdot \overrightarrow{x} ) \land ||\overrightarrow{x}||_{\infty} < B  )}$
 \end{frame}

@@ -1,10 +1,8 @@
-\section{Ajtai Commitments}
-\begin{frame}{Ajtai Commitments}
+\section{Introduction}
+\begin{frame}{What we are trying to do}
     \begin{itemize}
-        \item Ajtai commitments allow us to commit to a vector of polynomials
-        \item We commit to an a vector $\overrightarrow{x}  \in \mathcal{R}^{m}$ by multiplying it with a random matrix $\bf{A} \in \mathcal{R}^{\kappa \times m}_\mathit{q}$
-        \item $||\overrightarrow{x}||_{\infty} < B$ where $B$ is the norm bound
-        \item Output of commitment is  $cm := \bf{A} \cdot \overrightarrow{x} mod \; q \in \mathcal{R}^{\kappa}_{\mathit{q}}$
-        \item This commitment is considered binding because of the assumed hardness of MSIS
+        \item We start off with a relation made hard to 'break' based on the MSIS problem
+        \item We will show that this relation is equivalent to two other relations, that can be used for folding
+        \item We then adapt this equivalence to the Customisable Constraint System (CCS)
     \end{itemize}
 \end{frame}

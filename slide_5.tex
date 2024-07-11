@@ -1,11 +1,27 @@
-\section{X in Z^{kd}}
-\begin{frame}{$\overrightarrow{x} \in \mathbb{Z}^{\kappa d}$}
+\section{Coefficient embeddings and rotational matrices}
+\begin{frame}
+    {Coefficient Embeddings and Rotational Matrices}
+    \begin{itemize}
+        \item For $a \in \mathcal{R}_q$, $vec(a)$ reoresents the vectors of coefficients
+        \item For a vector $\overrightarrow{a} \in \mathcal{R}^m_q$, $vec(\overrightarrow{a}) \in \mathbb{Z}^{m \times d}$ represents the coefficient vectors in $\overrightarrow{a}$
+        \item $fvec(\overrightarrow{a}) \in \mathbb{Z}^{md}$ is the vector that concatonates the rows of $\overrightarrow{a}$
+    \end{itemize}
 
     \begin{itemize}
-        \item We can uniquely represent $\overrightarrow{x} \in \mathcal{R}^m_q$ as $\overrightarrow{x} \in \mathbb{Z}^{\kappa d}$ by taking $fvec(\overrightarrow{x})$
-        \item $\overline{\mathbf{A}} = rot(\mathbf{A})$
-        \item $\overline{cm}$ is the coefficient embedding of $cm$
-        \item $\overline{cm} = \overline{\mathbf{A}} \cdot fvec(\overrightarrow{x})$
+        \item $\text{Rot}(\mathbf{a}) := (\text{vec}(\mathbf{a}), \text{vec}(\mathbf{X} \cdot \mathbf{a}), \ldots, \text{vec}(\mathbf{X}^{d-1} \cdot \mathbf{a})) \in \mathbb{Z}_q^{d \times d}$.
+        \item
+              For a matrix $\mathbf{A} \in \mathbb{R}_q^{\kappa \times m}$, we define the rotation matrix $\text{Rot}(\mathbf{A}) \in \mathbb{Z}_q^{\kappa d \times md}$ as
+
+              \[
+                  \text{Rot}(\mathbf{A}) :=
+                  \begin{bmatrix}
+                      \text{Rot}(\mathbf{A}_{1,1})      & \cdots & \text{Rot}(\mathbf{A}_{1,m})      \\
+                      \vdots                            & \ddots & \vdots                            \\
+                      \text{Rot}(\mathbf{A}_{\kappa,1}) & \cdots & \text{Rot}(\mathbf{A}_{\kappa,m})
+                  \end{bmatrix}
+              \]
+
+        \item $\text{fvec}(\mathbf{A} \mathbf{f}) = \text{Rot}(\mathbf{A})\text{fvec}(\mathbf{f})$ for any $\mathbf{A} \in \mathbb{R}_q^{\kappa \times m}$ and $\mathbf{f} \in \mathbb{R}_q^m$.
     \end{itemize}
-    $\mathcal{R}^B_{MSIS^{\infty}} := {(pp, \, \overline{cm} \in \mathbb{Z}^{\kappa d}\, ;\, \overrightarrow{x}  \in \mathbb{Z}^{m d} : (\overline{cm}\, =\,\overline{ \bf{A}}\cdot \overrightarrow{x} ) \land ||\overrightarrow{x}||_{\infty} < B  )}$
+
 \end{frame}
