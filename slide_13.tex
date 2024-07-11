@@ -1,0 +1,18 @@
+\section{RBEvalccs}
+\begin{frame}
+    {$\mathcal{R}^B_{\text{evalccs}}$}
+    \begin{itemize}
+        \item We can now combine $\mathcal{R}^B_{eval}$ and $\mathcal{R}^B_{\text{lccs}}$ to yield our final relation $\mathcal{R}^B_{\text{evalccs}}$
+    \end{itemize}
+
+    \[
+        \mathcal{R}^B_{\text{evalccs}} = \left\{
+        \begin{aligned}
+             & (\text{pp}, \mathbb{x} := ( \overrightarrow{\textbf{r}} \in \mathcal{R}^{\log\ m}_{q},\, cm,\,\textbf{v},\, [\textbf{u}_i]^t_{i=1},\, \mathbb{x}_{\text{ccs}} , \textbf{h}));                                       \\
+             & \mathbb{w} := (\overrightarrow{\textbf{f}} \in \mathcal{R}^m_q, \mathbb{w}_{\text{ccs}} \in \mathcal{R}^{n- l_{\text{in}} -1}) \ \text{s.t.}                                                                        \\
+             & (\textbf{z}_{\text{ccs}} = \textbf{G}\overrightarrow{\textbf{f}}) \land (\text{pp}_{\text{cm}},\, (\text{cm},\, \overrightarrow{\textbf{r}},\, \textbf{v});\; \overrightarrow{\textbf{f}}) \in \mathcal{R}^B_{eval} \\
+             & \land (\text{pp}_\text{ccs},\, (\overrightarrow{\textbf{r}}_{\text{ccs}},\,[\textbf{u}_i]^t_{i=1} \,\mathbb{x}_\text{ccs}, \textbf{h});\;\mathbb{w}_\text{ccs}) \in \mathcal{R}_{\text{lccs}}
+        \end{aligned}
+        \right\}
+    \]
+\end{frame}
